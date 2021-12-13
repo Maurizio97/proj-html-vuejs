@@ -42,13 +42,19 @@
           
         </nav>
         <!-- /navbar -->
+      
+      <!-- text jumbotron -->
         <div id="cont-text-jumbo">
           <h3>MOVING WITHOUT THE HASSLE</h3>
           <h1>WE MAKE IT SIMPLE</h1>
           <h3>PROFESSIONAL SERVICE WITH QUALITY AND CUSTOMER SATISFACTION</h3>
         </div>
+      <!-- /text jumbotron -->
+
       </div>
     </div>
+    <!-- /jumbotron  -->
+
 
     <!-- Banner Get Quote  -->
     <div id="banner-get-quote">
@@ -71,6 +77,7 @@ export default {
 // varibili colori
 $green: #6abf17;
 $blueBanner: #1b74c3;
+$colorSubTitle: #6b6b6b;
 
 // banner contatti
 #cont-banner-contacts {
@@ -116,6 +123,7 @@ nav {
     display: flex;
     align-items: center;
   }
+  
   #navbar {
     display: flex;
     list-style: none;
@@ -145,7 +153,7 @@ nav {
   }
 
   h3 {
-    color: #6b6b6b;
+    color: $colorSubTitle;
     font-size: 16px;
     margin: 8px 0;
   }
