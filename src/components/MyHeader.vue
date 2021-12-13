@@ -58,7 +58,11 @@
 
     <!-- Banner Get Quote  -->
     <div id="banner-get-quote">
+      <div>
+      <i class="far fa-paper-plane"></i>
+      GET A FREE QUOTE ONLINE NOW&excl;
 
+      </div>
     </div>
   </header>
 </template>
@@ -123,7 +127,7 @@ nav {
     display: flex;
     align-items: center;
   }
-  
+
   #navbar {
     display: flex;
     list-style: none;
@@ -163,5 +167,9 @@ nav {
 #banner-get-quote {
   height: 100px;
   background-color: $blueBanner;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  font-size: 17px;
 }
 </style>

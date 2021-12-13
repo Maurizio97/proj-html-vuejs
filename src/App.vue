@@ -52,7 +52,6 @@ $colorButton: #1775bf;
 $colorSubTitle: #6b6b6b;
 #app {
   font-family:  Arial, Helvetica, sans-serif;
-  text-align: end;
 }
 
 // regole generali
