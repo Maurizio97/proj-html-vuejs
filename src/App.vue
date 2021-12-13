@@ -22,22 +22,28 @@ export default {
     return {
       navBar: [
         {
-          navItem: "Home"
+          navItem: "Home",
+          active: true
         },
         {
-          navItem: "Rates"
+          navItem: "Rates",
+          active: false
         },
         {
-          navItem: "Testimonials"
+          navItem: "Testimonials",
+          active: false
         },
         {
-          navItem: "FAQ"
+          navItem: "FAQ",
+          active: false
         },
         {
-          navItem: "Blog"
+          navItem: "Blog",
+          active: false
         },
         {
-          navItem: "Contact"
+          navItem: "Contact",
+          active: false
         },
       ]
     }

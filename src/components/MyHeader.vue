@@ -36,8 +36,8 @@
           <!-- voci menu-->
           <div id="cont-navbar">
             <ul id="navbar">
-              <li v-for="item, i in menuItems" :key="i"> 
-                <a href="#">
+              <li v-for="item, i in menuItems" :key="i" > 
+                <a href="#" :class="item.active? 'active':''">
                   {{ item.navItem }}
                 </a>
               </li>
@@ -154,8 +154,13 @@ nav {
         color: black;
         font-weight: 800;
         font-size: 14px;
+
       }
-    }
+
+      .active {
+        color: $green;
+      }
+  }
   }
 }
 // text jumbotron
@@ -168,6 +173,7 @@ nav {
 
   h1 {
     font-size: 60px;
+    font-weight: 900;
   }
 
   h3 {
