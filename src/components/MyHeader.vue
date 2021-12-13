@@ -3,12 +3,14 @@
     <!-- banner Contacts -->
     <div class="bg-green">
       <div class="center" id="cont-banner-contacts">
+        <!-- numero di telefono -->
         <div>
           <i class="fas fa-phone icon"></i>
           Call us for a free quote&colon; &#49;&period;&#56;&#48;&#48;&period;&#53;&#53;&#53;&period;&#54;&#55;&#56;&#57;
         </div>
 
-        <div>
+        <!-- icone social -->
+        <div id="social-icons">
           <span class="icon"><i class="fab fa-facebook-f"></i></span>
           <span class="icon"><i class="fab fa-twitter"></i></span>
           <span class="icon"><i class="fab fa-instagram"></i></span>
@@ -26,9 +28,12 @@
       <div id="content-jumbo">
         <!-- navbar -->
         <nav class="center">
+          <!-- logo -->
           <div id="logo">
             <img src="../assets/img/avada-movers-logo.png" alt="logo avada movers">
           </div>
+
+          <!-- voci menu-->
           <div id="cont-navbar">
             <ul id="navbar">
               <li v-for="item, i in menuItems" :key="i"> 
@@ -79,9 +84,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 // varibili colori
-$green: #6abf17;
-$blueBanner: #1b74c3;
-$colorSubTitle: #6b6b6b;
+@import '@/assets/_variables.scss';
 
 // banner contatti
 #cont-banner-contacts {
@@ -92,6 +95,13 @@ $colorSubTitle: #6b6b6b;
   justify-content: space-between;
   align-items: center;
 
+  div {
+    width: 100%;
+  }
+
+  #social-icons {
+    text-align: right;
+  }
   .icon {
     margin: 0 8px;
     font-size: 16px;
@@ -118,12 +128,16 @@ $colorSubTitle: #6b6b6b;
 
 // nav bar
 nav {
-  // margin-top: 30px;
   height: 110px;
   display: flex;
   align-items: center;
 
+  #logo {
+    width: 100%;
+  }
+
   #cont-navbar {
+    width: 100%;
     display: flex;
     align-items: center;
   }
@@ -166,7 +180,7 @@ nav {
 // banner get quote
 #banner-get-quote {
   height: 100px;
-  background-color: $blueBanner;
+  background-color: $blue;
   color: white;
   text-align: center;
   line-height: 100px;

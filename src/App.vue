@@ -46,10 +46,8 @@ export default {
 </script>
 
 <style lang="scss">
-$blue: #1b74c3;
-$green: #6abf17;
-$colorButton: #1775bf;
-$colorSubTitle: #6b6b6b;
+@import '@/assets/_variables.scss';
+
 #app {
   font-family:  Arial, Helvetica, sans-serif;
 }
