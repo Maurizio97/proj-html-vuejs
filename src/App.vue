@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <MyHeader/>
+    <MyHeader :menuItems="navBar"/>
     <MyMain/>
     <MyFooter/>
   </div>
@@ -17,22 +17,47 @@ export default {
     MyHeader,
     MyMain,
     MyFooter,
+  },
+  data(){
+    return {
+      navBar: [
+        {
+          navItem: "Home"
+        },
+        {
+          navItem: "Rates"
+        },
+        {
+          navItem: "Testimonials"
+        },
+        {
+          navItem: "FAQ"
+        },
+        {
+          navItem: "Blog"
+        },
+        {
+          navItem: "Contact"
+        },
+      ]
+    }
   }
 }
 </script>
 
 <style lang="scss">
-$blueBanner: #1b74c3;
+$blue: #1b74c3;
 $green: #6abf17;
 $colorButton: #1775bf;
 #app {
   font-family:  Arial, Helvetica, sans-serif;
+  text-align: end;
 }
 
 // regole generali
 * {
   margin: 0 auto;
-  padding: 0 auto;
+  padding: 0 ;
   box-sizing: border-box;
 }
 
@@ -45,5 +70,14 @@ $colorButton: #1775bf;
   background-color: $green;
 } 
 
+button {
+  background-color: $blue;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+}
 
 </style>
