@@ -26,12 +26,24 @@ $blueBanner: #5babd9;
 $green: #6abf17;
 $colorButton: #1775bf;
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-family:  Arial, Helvetica, sans-serif;
 }
+
+// regole generali
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+  box-sizing: border-box;
+}
+
+.center {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.bg-green {
+  background-color: $green;
+} 
+
 
 </style>
