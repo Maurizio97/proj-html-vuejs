@@ -22,7 +22,7 @@ export default {
 </script>
 
 <style lang="scss">
-$blueBanner: #5babd9;
+$blueBanner: #1b74c3;
 $green: #6abf17;
 $colorButton: #1775bf;
 #app {
