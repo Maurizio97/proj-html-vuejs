@@ -123,20 +123,24 @@ button {
   font-size: 15px;
   font-weight: bold;
   color: white;
-  padding: 10px 20px;
+  padding: 15px 30px;
   border-radius: 20px;
   border: none;
 }
 .title {
   color: $green;
+  font-size: 45px;
+  font-weight: 900;
 }
 
 .sub-title {
   color: $colorSubTitle;
+  font-size: 18px;
 }
 
 .text-par {
   line-height: 2;
+  font-size: 17px;
 }
 
 
