@@ -1,53 +1,52 @@
 <template>
   <section>
-      <h3 class="sub-title">
-          WE ARE A PROFESSIONAL
-      </h3>
-      <h2 class="title">
-          Full&ndash;Service Solution
-      </h2>
-      <div id="container-card" class="center">
-        <!-- card -->
-        <div class="bg-card" v-for="item in elSection2" :key="item.title">
-          <div class="card">
-            <img :src="item.image" :alt="item.title">
-            <div id="cont-text">
-              <h2 class="title-card">
-              {{ item.title }}
-              </h2>
-              <p class="text-par">
-                {{ item.paragraph }}
-              </p>
-              <button>{{ item.btn }}</button>
-            </div>
+    <h3 class="sub-title">
+        WE ARE A PROFESSIONAL
+    </h3>
+    <h2 class="title">
+        Full&ndash;Service Solution
+    </h2>
+    <div id="container-card" class="center">
+      <!-- card -->
+      <!-- <div class="bg-card" > -->
+        <div class="card" v-for="item in elSection4" :key="item.title">
+          <img :src="item.image" :alt="item.name">
+          <div id="cont-text">
+            <h2 class="title-card">
+            {{ item.name }}
+            </h2>
+            <p class="text-par">
+              "{{ item.paragraph }}"
+            </p>
           </div>
         </div>
-      </div>
-      
+      <!-- </div> -->
+    </div>
+    <div id="cont-button">
+      <button>READ MORE TESTIMONIALS</button>
+    </div>
   </section>
 </template>
 
 <script>
 export default {
-  name: 'MySection2',
+  name: 'MySection4',
   data() {
     return {
-      elSection2: [
+      elSection4: [
         {
-          image: require("@/assets/img/avada-movers-serviceonephoto-final.jpg"),
-          title: "Two Man Teams",
+          image: require("@/assets/img/avada-movers-johndoe-final.jpg"),
+          name: "John Doe",
           paragraph: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius voluptatem necessitatibus enim. Rerum facilis ipsum, dignissimos dolorum, aliquid ipsa nemo at omnis sint esse saepe explicabo repellat amet illo molestias?",
-          btn: "READ MORE",
         },
         {
-          image: require("@/assets/img/avada-movers-servicetwophoto-final.jpg"),
-          title: "We Do All The Lifting",
+          image: require("@/assets/img/avada-movers-janedoe-final.jpg"), 
+          name: "Jane Doe",
           paragraph: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius voluptatem necessitatibus enim. Rerum facilis ipsum, dignissimos dolorum, aliquid ipsa nemo at omnis sint esse saepe explicabo repellat amet illo molestias?",
-          btn: "READ MORE",
         },
         {
-          image: require("@/assets/img/avada-movers-servicethreephoto-final.jpg"),
-          title: "Coast To Coast",
+          image: require("@/assets/img/avada-movers-johnsmith-final.jpg"), 
+          name: "Jonh Smith",
           paragraph: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius voluptatem necessitatibus enim. Rerum facilis ipsum, dignissimos dolorum, aliquid ipsa nemo at omnis sint esse saepe explicabo repellat amet illo molestias?",
           btn: "READ MORE",
         },
@@ -63,6 +62,7 @@ export default {
 
 section {
   padding: 150px 0;
+  background-image: url("../../src/assets/img/avada-movers-testimonial-background.jpg");
 }
 
 .sub-title {
@@ -78,19 +78,17 @@ section {
   justify-content: space-between;
 }
 
-.bg-card {
-  margin: 60px 0;
-  width: 30%;
-  padding: 30px;
-  background-color: $bgCardSection2;
-
+.card {
+  width: calc(100% / 3);
+  margin: 60px 0 30px;
+  
   img {
-    width: 100%;
+    border-radius: 50%;
+    height: 150px;
   }
 }
 
 #cont-text {
-  background-color: white;
   padding: 40px;
   margin-top: 30px;
 }
@@ -108,4 +106,9 @@ div {
     margin: 30px auto;
   }
 }
+
+#cont-button {
+  margin: 0 auto;
+}
+
 </style>
