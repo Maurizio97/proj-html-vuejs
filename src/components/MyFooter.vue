@@ -1,14 +1,66 @@
 <template>
   <footer class="bg-green">
     <!-- top footer -->
-    <div id="top-footer">
+    <div id="bg-top-footer">
 
+      <div id="top-footer" class="center">
+
+        <!-- colonna 1 -->
+        <div class="col-ft">
+          <h3>
+            ABOUT
+          </h3>
+          <p class="text-par">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi enim delectus veritatis impedit blanditiis natus. Aperiam impedit non magnam, quam ipsa eos officiis tempora quibusdam, a explicabo accusamus facere odio!
+          </p>
+          <img id="logo-ft" src="../assets/img/avada-movers-logo.png" alt="logo">
+        </div>
+
+        <!-- colonna 2 -->
+        <div class="col-ft">
+          <h3>
+            AVADA MOVERS
+          </h3>
+          <ul>
+            <li v-for="item in itemsAvadaMovers" :key="item" > 
+              <a href="#" :class="item.active? 'active':''">
+                <i class="fas fa-chevron-right"></i>
+                {{ item.name }}
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- colonna 3 -->
+        <div class="col-ft">
+          <h3>
+            RECENT POSTS
+          </h3>
+          <ul>
+            <li v-for="item in itemsRecentPosts" :key="item"> 
+              <a href="#">
+                <i class="fas fa-chevron-right"></i>
+                {{ item.name }}
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
     <!-- /top footer -->
 
     <!-- bottom footer -->
     <div id="bottom-footer">
+      <div id="text-bt-ft">
+        &copy; Copyright &#50;&#48;&#49;&#50; - &#50;&#48;&#50;&#48; &vert; Avada Theme by ThemeFusion &vert; All Rights Reserved &vert; Powered by WordPress
+      </div>
 
+      <div id="social-icons-ft">
+          <span class="icon"><i class="fab fa-facebook-f"></i></span>
+          <span class="icon"><i class="fab fa-twitter"></i></span>
+          <span class="icon"><i class="fab fa-instagram"></i></span>
+          <span class="icon"><i class="fab fa-youtube"></i></span>
+        </div>
     </div>
     <!-- /bottom footer -->
   </footer>
@@ -17,6 +69,10 @@
 <script>
 export default {
   name: 'MyFooter',
+  props: {
+    itemsAvadaMovers:Array,
+    itemsRecentPosts:Array
+  }
 }
 </script>
 
@@ -25,6 +81,68 @@ export default {
 @import '@/assets/_variables.scss';
 
 footer {
-  height: 500px;
+  // height: 500px;
+  padding-top: 25px ;
+
+  #bg-top-footer {
+    background-color: white;
+  }
+
+  // top footer
+  #top-footer {
+    display: flex;
+
+    .col-ft {
+      width: calc(100% / 3);
+      margin: 30px 0;
+      // titolo
+      h3 {
+        margin: 20px 0 25px;
+      }
+      
+      // stile lista
+      ul {
+        list-style: none;
+
+        li {
+          margin: 30px 0 30px;
+
+          a {
+            text-decoration: none;
+            color: black;
+          } 
+
+          .active {
+            color: $green;
+          }
+        }
+      }
+
+      #logo-ft {
+        margin-top: 25px;
+      }
+    }
+  }
+  // /top footer
+
+  // bottom footer
+  #bottom-footer {
+    color: white;
+    padding-bottom: 25px;
+  }
+
+  #text-bt-ft {
+    text-align: center;
+    margin: 25px 0 ;
+  }
+
+  #social-icons-ft {
+    text-align: center;
+  }
+
+  .icon {
+    margin: 0 14px;
+    font-size: 30px;
+  }
 }
 </style>

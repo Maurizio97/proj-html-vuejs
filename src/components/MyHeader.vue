@@ -160,7 +160,7 @@ nav {
       .active {
         color: $green;
       }
-  }
+    }
   }
 }
 // text jumbotron
