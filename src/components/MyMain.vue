@@ -1,7 +1,10 @@
 <template>
   <main>
+    <!-- sezione 1 -->
     <MySection1/>
-    <MySection2/>
+    <!-- sezione 2 -->
+    <MySection2 :content="elSection2"/>
+    <!-- sezione 5 -->
     <MySection5/>
   </main>
 </template>
@@ -17,7 +20,6 @@ export default {
     MySection2,
     MySection5,
   },
-  
 }
 </script>
 

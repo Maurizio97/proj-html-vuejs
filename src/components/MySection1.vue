@@ -23,12 +23,18 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+@import '@/assets/_variables.scss';
+
+section {
+    background-color: $bgCardSection2;
+}
 div {
     text-align: center;
-    margin: 150px 0;
+    padding: 150px 0;
 
     h2 {
         width: 25%;
+        margin: 0 auto;
     }
 
     p {

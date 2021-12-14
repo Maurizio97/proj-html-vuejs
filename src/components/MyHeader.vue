@@ -95,13 +95,6 @@ export default {
   justify-content: space-between;
   align-items: center;
 
-  div {
-    width: 100%;
-  }
-
-  #social-icons {
-    text-align: right;
-  }
   .icon {
     margin: 0 8px;
     font-size: 16px;
@@ -131,13 +124,9 @@ nav {
   height: 110px;
   display: flex;
   align-items: center;
-
-  #logo {
-    width: 100%;
-  }
+  justify-content: space-between;
 
   #cont-navbar {
-    width: 100%;
     display: flex;
     align-items: center;
   }
