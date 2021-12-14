@@ -127,6 +127,13 @@ button {
   border-radius: 20px;
   border: none;
 }
+.title {
+  color: $green;
+}
+
+.sub-title {
+  color: $colorSubTitle;
+}
 
 .text-par {
   line-height: 2;

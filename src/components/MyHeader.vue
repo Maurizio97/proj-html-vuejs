@@ -177,7 +177,7 @@ nav {
   }
 
   h3 {
-    color: $colorSubTitle;
+    color: $colorSubTitleJb;
     font-size: 16px;
     margin: 8px 0;
   }
