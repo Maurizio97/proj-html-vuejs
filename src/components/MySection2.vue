@@ -95,7 +95,7 @@ section {
   margin-top: 30px;
 }
 
-div {
+.card {
   text-align: center;
 
   .title-card {
@@ -104,7 +104,7 @@ div {
     font-size: 30px;
   }
 
-  p {
+  .text-par {
     margin: 30px auto;
   }
 }
