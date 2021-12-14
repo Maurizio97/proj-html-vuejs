@@ -126,6 +126,7 @@ button {
   padding: 15px 30px;
   border-radius: 20px;
   border: none;
+  cursor: pointer;
 }
 .title {
   color: $green;
