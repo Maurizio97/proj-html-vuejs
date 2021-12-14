@@ -103,6 +103,7 @@ section {
 
 .text-par {
   margin: 30px auto;
+  font-style: oblique;
 }
 
 #cont-button {
