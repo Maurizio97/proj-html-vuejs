@@ -76,39 +76,38 @@ section {
 #container-card {
   display: flex;
   justify-content: space-between;
-}
 
-.card {
-  width: calc(100% / 3);
-  margin: 60px 0 30px;
-  
-  img {
-    border-radius: 50%;
-    height: 150px;
+  .card {
+    width: calc(100% / 3);
+    margin: 60px 0 30px;
+    text-align: center;
+
+    img {
+      border-radius: 50%;
+      height: 150px;
+    }
   }
 }
+
 
 #cont-text {
   padding: 40px;
   margin-top: 30px;
 }
 
-div {
-  text-align: center;
+.title-card {
+  color: $blue;
+  font-weight: 700;
+  font-size: 30px;
+}
 
-  .title-card {
-    color: $blue;
-    font-weight: 700;
-    font-size: 30px;
-  }
-
-  p {
-    margin: 30px auto;
-  }
+.text-par {
+  margin: 30px auto;
 }
 
 #cont-button {
   margin: 0 auto;
+  text-align: center;
 }
 
 </style>
