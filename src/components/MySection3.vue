@@ -21,11 +21,6 @@
 <script>
 export default {
   name: 'MySection3',
-    data(){
-      return {
-          // bgImage: require("@/assets/img/avada-movers-movewithease-background-new.jpg")
-      }
-    }
 }
 </script>
 
