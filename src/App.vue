@@ -2,7 +2,7 @@
   <div id="app">
     <MyHeader :menuItems="navBar"/>
     <MyMain/>
-    <MyFooter :itemsAvadaMovers="avadaMovers" :itemsRecentPosts="recentPost"/>
+    <MyFooter :ArrCont="contentNavFooter" :itemsAvadaMovers="avadaMovers" :itemsRecentPosts="recentPost"/>
   </div>
 </template>
 
@@ -46,50 +46,66 @@ export default {
           active: false
         },
       ],
-      avadaMovers: [
+
+      contentNavFooter : [
         {
-          name: "Home",
-          active: true
+          title : {
+            titleName: "avadaMovers"
+          },
+
+          nav : [
+            {
+              name: "Home",
+              active: true
+            },
+            {
+              name: "Rates",
+              active: false
+            },
+            {
+              name: "Testimonials",
+              active: false
+            },
+            {
+              name: "Blog",
+              active: false
+            },
+            {
+              name: "Free Quote",
+              active: false
+            },
+          ]
         },
+
         {
-          name: "Rates",
-          active: false
-        },
-        {
-          name: "Testimonials",
-          active: false
-        },
-        {
-          name: "Blog",
-          active: false
-        },
-        {
-          name: "Free Quote",
-          active: false
-        },
+          title : {
+            titleName: "recentPost"
+          },
+
+          nav : [
+            {
+              name: "Hendling Out To College&quest;",
+              active: false
+            },
+            {
+              name: "Moving Your Business&quest;",
+              active: false
+            },
+            {
+              name: "Outstanding Quality",
+              active: false
+            },
+            {
+              name: "Cost of Moving",
+              active: false
+            },
+            {
+              name: "Best Moving Tips",
+              active: false
+            },
+          ]
+        }
       ],
-      recentPost: [
-        {
-          name: "Hendling Out To College&quest;",
-          active: false
-        },
-        {
-          name: "Moving Your Business&quest;",
-          active: false
-        },
-        {
-          name: "Outstanding Quality",
-          active: false
-        },
-        {
-          name: "Cost of Moving",
-          active: false
-        },
-        {
-          name: "Best Moving Tips",
-          active: false
-        },
-      ]
     }
   }
 }
