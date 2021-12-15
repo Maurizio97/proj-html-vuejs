@@ -2,7 +2,8 @@
   <footer class="bg-green">
     <!-- top footer -->
     <div id="bg-top-footer">
-
+      
+      <!-- contenitore per la parte alta del footer -->
       <div id="top-footer" class="center">
 
         <!-- colonna 1 -->
@@ -23,15 +24,18 @@
         :contentCol="object"
         />
       </div>
+      <!-- /contenitore per la parte alta del footer -->
     </div>
     <!-- /top footer -->
 
     <!-- bottom footer -->
     <div id="bottom-footer">
+      <!-- testo  -->
       <div id="text-bt-ft">
         &copy; Copyright &#50;&#48;&#49;&#50; - &#50;&#48;&#50;&#48; &vert; Avada Theme by ThemeFusion &vert; All Rights Reserved &vert; Powered by WordPress
       </div>
 
+      <!-- icone social -->
       <div id="social-icons-ft">
           <span class="icon"><i class="fab fa-facebook-f"></i></span>
           <span class="icon"><i class="fab fa-twitter"></i></span>
@@ -53,8 +57,6 @@ export default {
   },
   props: {
     ArrCont:Array,
-    itemsAvadaMovers:Object,
-    itemsRecentPosts:Array
   }
 }
 </script>
@@ -64,7 +66,6 @@ export default {
 @import '@/assets/_variables.scss';
 
 footer {
-  // height: 500px;
   padding-top: 25px ;
 
   #bg-top-footer {
@@ -77,8 +78,8 @@ footer {
 
     .col-ft {
       width: calc(100% / 3);
-      // margin: 30px 0;
       padding: 30px;
+      
       // titolo
       h3 {
         margin: 20px 0 25px;

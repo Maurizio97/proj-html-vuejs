@@ -1,10 +1,10 @@
 <template>
   <section>
       <h3 class="sub-title">
-          WE ARE A PROFESSIONAL
+        WE ARE A PROFESSIONAL
       </h3>
       <h2 class="title">
-          Full&ndash;Service Solution
+        Full&ndash;Service Solution
       </h2>
       <div id="container-card" class="center">
         <!-- card -->

@@ -2,7 +2,7 @@
   <div id="app">
     <MyHeader :menuItems="navBar"/>
     <MyMain/>
-    <MyFooter :ArrCont="contentNavFooter" :itemsAvadaMovers="avadaMovers" :itemsRecentPosts="recentPost"/>
+    <MyFooter :ArrCont="contentNavFooter"/>
   </div>
 </template>
 
@@ -50,7 +50,7 @@ export default {
       contentNavFooter : [
         {
           title : {
-            titleName: "avadaMovers"
+            titleName: "AVADA MOVERS"
           },
 
           nav : [
@@ -79,7 +79,7 @@ export default {
 
         {
           title : {
-            titleName: "recentPost"
+            titleName: "RECENT POST"
           },
 
           nav : [
@@ -140,10 +140,11 @@ button {
   font-weight: bold;
   color: white;
   padding: 15px 30px;
-  border-radius: 20px;
+  border-radius: 30px;
   border: none;
   cursor: pointer;
 }
+
 .title {
   color: $green;
   font-size: 45px;
@@ -160,5 +161,7 @@ button {
   font-size: 17px;
 }
 
-
+.icon {
+  cursor: pointer;
+}
 </style>

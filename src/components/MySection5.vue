@@ -22,6 +22,9 @@ export default {
 <style scoped lang="scss">
 section {
     background-image: url("../../src/assets/img/avada-movers-request-quote-background.jpg");
+    background-repeat: repeat-x;
+    background-size: 125%;
+    
 }
 
 div {

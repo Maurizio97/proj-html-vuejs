@@ -63,6 +63,8 @@ export default {
 section {
   padding: 150px 0;
   background-image: url("../../src/assets/img/avada-movers-testimonial-background.jpg");
+  background-position: right;
+  background-size: 120%;
 }
 
 .sub-title {

@@ -44,6 +44,7 @@
             </ul>
             <button>FREE QUOTE</button>
           </div>
+          <!-- /voci menu-->
           
         </nav>
         <!-- /navbar -->
@@ -66,7 +67,6 @@
       <div>
       <i class="far fa-paper-plane"></i>
       GET A FREE QUOTE ONLINE NOW&excl;
-
       </div>
     </div>
   </header>
@@ -180,5 +180,10 @@ nav {
   text-align: center;
   line-height: 100px;
   font-size: 17px;
+
+  .fa-paper-plane {
+    margin-right: 7px;
+    font-size: 20px;
+  }
 }
 </style>
