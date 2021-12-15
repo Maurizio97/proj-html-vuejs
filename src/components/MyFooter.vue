@@ -16,35 +16,12 @@
           <img id="logo-ft" src="../assets/img/avada-movers-logo.png" alt="logo">
         </div>
 
-        <!-- colonna 2 -->
-        <div class="col-ft">
-          <h3>
-            AVADA MOVERS
-          </h3>
-          <ul>
-            <li v-for="item in itemsAvadaMovers" :key="item" > 
-              <a href="#" :class="item.active? 'active':''">
-                <i class="fas fa-chevron-right"></i>
-                {{ item.name }}
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- colonna 3 -->
-        <div class="col-ft">
-          <h3>
-            RECENT POSTS
-          </h3>
-          <ul>
-            <li v-for="item in itemsRecentPosts" :key="item"> 
-              <a href="#">
-                <i class="fas fa-chevron-right"></i>
-                {{ item.name }}
-              </a>
-            </li>
-          </ul>
-        </div>
+        <!-- colonna 2 e 3-->
+        <ColNavFt 
+        v-for="object, i in ArrCont"
+        :key="i"
+        :contentCol="object"
+        />
       </div>
     </div>
     <!-- /top footer -->
@@ -67,17 +44,23 @@
 </template>
 
 <script>
+import ColNavFt from '../components/ColNavFt.vue'
+
 export default {
   name: 'MyFooter',
+  components: {
+    ColNavFt,
+  },
   props: {
-    itemsAvadaMovers:Array,
+    ArrCont:Array,
+    itemsAvadaMovers:Object,
     itemsRecentPosts:Array
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
+<style lang="scss">
 @import '@/assets/_variables.scss';
 
 footer {
@@ -94,7 +77,8 @@ footer {
 
     .col-ft {
       width: calc(100% / 3);
-      margin: 30px 0;
+      // margin: 30px 0;
+      padding: 30px;
       // titolo
       h3 {
         margin: 20px 0 25px;
